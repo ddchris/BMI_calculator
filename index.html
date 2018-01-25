@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BMI calculor</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">
+				<img src="imgs/BMICLogo.png" >
+			</div>
+			<div class="InfoInput">
+				<div>
+					<label for="height">身高 cm</label>
+					<input type="number" id="height" placeholder="請輸入身高">
+				</div>
+				<div>
+					<label for="weight">體重 kg</label>
+					<input type="number" id="weight" placeholder="請輸入體重">
+				</div>
+				<div class="retestAndReset">
+					<input type="button" value="再次檢測" id="retest">
+					<input type="button" value="清除資料" id="reset">
+				</div>
+			</div>
+			<div class="resultBtn" id="resultBtn">
+				<span>看結果</span>
+			</div>
+
+		</div>
+		<div class="content">
+			<h1>BMI 紀錄</h1>
+			<div class="records">
+				<ul>
+					<li>
+						<span class="colorBar"></span>
+						<span class="status">過輕</span>
+						<span class="field">BMI</span>
+						<span class="data">27.35</span>
+						<span class="field">Height</span>
+						<span class="data">172 cm</span>
+						<span class="field">Weight</span>
+						<span class="data">67 kg</span>
+						<span class="time"></span>
+					</li>
+					<li>123</li>
+					<li>123</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footerLogo">
+				<img src="imgs/BMICLogo-gray.png">
+			</div>
+		</div>
+
+	</div>
+</body>
+	<script src="js/all.js"></script>
+</html>

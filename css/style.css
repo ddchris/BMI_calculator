@@ -1,0 +1,272 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background-color:black;
+}
+
+*,*:after, *:before{
+	box-sizing: border-box;
+}
+
+.wrap{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+.header{
+    width: 100%;
+    background: #424242;
+    height: 300px;
+}
+
+@media(max-width: 830px){
+	.header{
+		height: auto;
+		padding: 10px 0;
+	}
+}
+
+.logo img{
+	float: left;
+	margin-top: 92px;
+	margin-left: 16%;
+	width: 16%;
+}
+
+@media(max-width: 830px){
+	.logo{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.logo img{
+		float: none;
+		margin-top: 0;
+		margin-left: 0;
+		min-width: 100px;
+		min-height: 100px;
+	}
+}
+
+.InfoInput{
+	float: left;
+	width: 25%;
+	margin: 70px 0 0 6%;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+@media(max-width: 830px){
+	.InfoInput{
+		float: none;
+		width: 90%;
+		margin: 0;
+		height: auto;
+		margin-left: 5%;
+	}
+}
+
+.InfoInput label{
+	float: left;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFD366;
+
+}
+
+.InfoInput input{
+ float: left;
+ width: 100%;
+ margin-bottom: 10px;
+ height: 40px;
+ border-radius: 10px;
+ font-size: 20px;
+}
+
+.InfoInput input:focus{
+ background: rgba(220, 239, 165, .9);
+}
+
+.InfoInput .retestAndReset{
+    font-size: 20px;
+	width: 48%;
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.InfoInput .retestAndReset input{
+    font-size: 17px;
+    background: #FFD366;
+    min-width: 90%;
+    border: 1px solid black;
+}
+
+.InfoInput .retestAndReset input:hover{
+    background-color: #ffda80;
+    box-shadow: 0 1px 4px 2px rgba(255, 195, 49, 0.64);
+}
+
+#reset{
+    margin-left: 30%;
+}
+
+.resultBtn{
+    display: inline-block;
+    width: 25%;
+    float: left;
+    margin-top: 8%;
+    height: auto;
+}
+
+.resultBtn span{
+    display: block;
+    margin-left: 25%;
+    margin-top: 10px;
+    background: #FFD367;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 75%;
+    text-align: center;
+    line-height: 160px;
+}
+
+@media(max-width: 830px){
+	.resultBtn{
+		float: none;
+		width: 90%;
+		margin: 0;
+		height: auto;
+		margin-left: 5%;
+	}
+	.resultBtn span{
+	    margin-left: 12%;
+	}
+}
+
+.resultBtn span:hover {
+    background-color: #ffda80;
+    box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+}
+
+.content{
+	width: 100%;
+    background: #f5f5f5;
+	height: 400px;
+}
+
+.content h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.records ul{
+    margin: 0 auto;
+    text-align: center;
+    width: 65%;
+}
+
+@media(max-width: 830px){
+	.records ul{
+	    width: 95%;
+	}
+}
+
+.records ul li{
+	line-height: 58px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+
+.records .colorBar{
+	margin-left: 0px;
+	display: inline-block;
+	float: left;
+	width: 7px;
+	height: 62px;
+	background: #D108F7;
+}
+
+.records .status{
+	font-size: 20px;
+}
+
+.records .field{
+	font-size: 12px;
+	margin-left: 20px;
+	background: #96E60D;
+	opacity: .8;
+}
+
+.records .data{
+	font-size: 20px;
+}
+
+@media(max-width: 600px){
+	.records ul li{
+		line-height: 36px;
+	}
+	.records .colorBar{
+		height: 42px;
+	}
+	.records .data{
+	    font-size: 15px;
+	}
+}
+
+
+.footer{
+	width: 100%;
+	background: #FFD366;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	padding-top: 23px;
+}
+
+.footer img{
+	width: 55px;
+	height: 55px;
+}
