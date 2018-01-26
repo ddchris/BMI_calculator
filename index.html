@@ -22,32 +22,21 @@
 					<input type="number" id="weight" placeholder="請輸入體重">
 				</div>
 				<div class="retestAndReset">
-					<input type="button" value="再次檢測" id="retest">
-					<input type="button" value="清除資料" id="reset">
+					<input type="button" value="清空紀錄" id="reset">
 				</div>
 			</div>
 			<div class="resultBtn" id="resultBtn">
-				<span>看結果</span>
+				<span> 
+				 	 <p class="btnText">看結果</p>
+				</span>
 			</div>
 
 		</div>
 		<div class="content">
 			<h1>BMI 紀錄</h1>
 			<div class="records">
-				<ul>
-					<li>
-						<span class="colorBar"></span>
-						<span class="status">過輕</span>
-						<span class="field">BMI</span>
-						<span class="data">27.35</span>
-						<span class="field">Height</span>
-						<span class="data">172 cm</span>
-						<span class="field">Weight</span>
-						<span class="data">67 kg</span>
-						<span class="time"></span>
-					</li>
-					<li>123</li>
-					<li>123</li>
+				<ul id="dataList">
+					<!-- 待加入資料 -->
 				</ul>
 			</div>
 		</div>
