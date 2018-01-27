@@ -182,7 +182,7 @@ body{
 .resultBtn .dataText{
     position: absolute;
     top: 62%;
-    left: 40%;
+    left: 37%;
     font-size: 20px;
     font-weight: bold;
 }
@@ -198,8 +198,8 @@ body{
 
 @media(max-width: 830px){
 	.resultBtn .btnText{
-	    left: 30%;
-    	font-size: 25px;
+	    left: 27%;
+	    font-size: 25px;
 	}
 	.resultBtn .statusText{
 	position: static;
@@ -399,6 +399,9 @@ body{
 	}
 	.records .data{
 	    font-size: 15px;
+	}
+	.time {
+	    display: none;
 	}
 }
 
