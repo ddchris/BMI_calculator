@@ -29,11 +29,11 @@ function addAndShowData () {
 	var bmi_str = (weight / Math.pow(height/100, 2)).toFixed(2);
 	var status  = '';
 	var color   = '';
-	if (bmi_str < 18.5){ status = '體重過輕'; color ='a'; el_resultBtn.setAttribute('class','resultBtn a');}
-	else if ( bmi_str <= 24.0) { status = '體重理想'; color = 'b'; el_resultBtn.setAttribute('class','resultBtn b');}
-	else if ( bmi_str <= 30.0) { status = '輕度肥胖'; color ='c'; el_resultBtn.setAttribute('class','resultBtn c');}
-	else if ( bmi_str <= 40.0) { status = '中度肥胖'; color ='d'; el_resultBtn.setAttribute('class','resultBtn d');}
-	else { status = '重度肥胖'; color ='e'; el_resultBtn.setAttribute('class','resultBtn e');};
+	if (bmi_str < 18.5){ status = '體重過輕'; color ='blue'; el_resultBtn.setAttribute('class','resultBtn blue');}
+	else if ( bmi_str <= 24.0) { status = '體重理想'; color = 'green'; el_resultBtn.setAttribute('class','resultBtn green');}
+	else if ( bmi_str <= 30.0) { status = '輕度肥胖'; color ='orange'; el_resultBtn.setAttribute('class','resultBtn orange');}
+	else if ( bmi_str <= 40.0) { status = '中度肥胖'; color ='darkOrange'; el_resultBtn.setAttribute('class','resultBtn darkOrange');}
+	else { status = '重度肥胖'; color ='red'; el_resultBtn.setAttribute('class','resultBtn red');};
 	//建立一筆資料
 	var bmiData_obj = {
 			'height': height,
@@ -105,7 +105,7 @@ el_reset.addEventListener('click', resetData, false);
 
 // 頁面初始化
 if(!localStorage.getItem('bmiDatas')){
-	console.log('worked')
     bmiDatas = '[]';
 	localStorage.setItem('bmiDatas',bmiDatas);
-};
+}
+else{ bmiDatas = JSON.parse(localStorage.getItem('bmiDatas')); showData (); };

@@ -49,6 +49,10 @@ body{
 	box-sizing: border-box;
 }
 
+input{
+	outline:none;
+}
+
 .wrap{
 	margin: 0 auto;
 	max-width: 1024px;
@@ -209,19 +213,19 @@ body{
 	}
 }
 
-.resultBtn .statusText.a{
+.resultBtn .statusText.blue{
     color: #31BAF9;
 }
-.resultBtn .statusText.b{
+.resultBtn .statusText.green{
     color: #86D73E;
 }
-.resultBtn .statusText.c{
+.resultBtn .statusText.orange{
     color: #FF982D;
 }
-.resultBtn .statusText.d{
+.resultBtn .statusText.darkOrange{
     color: #FF6C02;
 }
-.resultBtn .statusText.e{
+.resultBtn .statusText.red{
     color: #FF1200;
 }
 
@@ -235,48 +239,48 @@ body{
 	border-radius: 50%;
 }
 
-.resultBtn.a .picLoop{
+.resultBtn.blue .picLoop{
 	display: inline;
 	background: #31BAF9;
 }
-.resultBtn.b .picLoop{
+.resultBtn.green .picLoop{
 	display: inline;
 	background: #86D73E;
 }
-.resultBtn.c .picLoop{
+.resultBtn.orange .picLoop{
 	display: inline;
 	background: #FF982D;
 }
-.resultBtn.d .picLoop{
+.resultBtn.darkOrange .picLoop{
 	display: inline;
 	background: #FF6C02;
 }
-.resultBtn.e .picLoop{
+.resultBtn.red .picLoop{
 	display: inline;
 	background: #FF1200;
 }
 
-.resultBtn.a span{
+.resultBtn.blue span{
     background: #424242;
     border: 10px solid #31BAF9;
 	color: #31BAF9;
 }
-.resultBtn.b span{
+.resultBtn.green span{
     background: #424242;
     border: 10px solid #86D73E;
 	color: #86D73E;
 }
-.resultBtn.c span{
+.resultBtn.orange span{
     background: #424242;
     border: 10px solid #FF982D;
 	color: #FF982D;
 }
-.resultBtn.d span{
+.resultBtn.darkOrange span{
     background: #424242;
     border: 10px solid #FF6C02;
 	color: #FF6C02;
 }
-.resultBtn.e span{
+.resultBtn.red span{
     background: #424242;
     border: 10px solid #FF1200;
     color: #FF1200;
@@ -300,8 +304,8 @@ body{
     box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
 }
 
-.resultBtn.a span:hover, .resultBtn.b span:hover, .resultBtn.c span:hover,
-.resultBtn.d span:hover, .resultBtn.e span:hover{
+.resultBtn.blue span:hover, .resultBtn.green span:hover, .resultBtn.orange span:hover,
+.resultBtn.darkOrange span:hover, .resultBtn.red span:hover{
     background-color: #6C6969;
     box-shadow: 0 0 0 0 #fff;
 
@@ -347,19 +351,19 @@ body{
 	background: #D108F7;
 }
 
-.colorBar.a{
+.colorBar.blue{
 	background: #31BAF9;
 }
-.colorBar.b{
+.colorBar.green{
 	background: #86D73E;
 }
-.colorBar.c{
+.colorBar.orange{
 	background: #FF982D;
 }
-.colorBar.d{
+.colorBar.darkOrange{
 	background: #FF6C02;
 }
-.colorBar.e{
+.colorBar.red{
 	background: #FF1200;
 }
 
